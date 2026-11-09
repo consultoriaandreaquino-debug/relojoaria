@@ -94,7 +94,7 @@ final class Auth
         $row = $stmt->fetch();
 
         // Mesmo custo de verificação para e-mail inexistente (não revela quem tem conta)
-        $hash = $row['password_hash'] ?? '$2y$10$usesomesillystringfore7hnbRJHxXVLeakoG8K30oukPsA.ztMG';
+        $hash = $row['password_hash'] ?? '$2y$10$.208uPbOydc0kFCQvxNPzuANwNE1/DOeKnzepCS2qHmKwGYgFGlua';
         if (!password_verify($password, $hash) || !$row) {
             return false;
         }
