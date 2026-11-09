@@ -31,6 +31,8 @@ Carregadas pelo Google Fonts com `display=swap`.
 
 Neutros de apoio (não são cores de destaque): marfim `#F6F2EA`, papel `#FBF9F5`, tinta `#14181D`, cinzas quentes `#6B665E` / `#A39E94` / `#E4DED3`.
 
+Cor funcional de erro (não é cor de marca): `#8C2F24`, usada só em mensagens de validação e ações destrutivas.
+
 Contraste verificado (AA): tinta sobre marfim, marfim sobre Midnight e marfim sobre Heritage passam com folga. Champagne é usada em texto apenas em tamanhos grandes ou sobre fundos escuros (sobre Midnight: ~6,9:1); sobre marfim, o preço usa a tinta e a champagne fica só nas linhas.
 
 ## Distribuição de cor por página

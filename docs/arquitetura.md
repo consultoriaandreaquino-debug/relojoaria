@@ -11,16 +11,16 @@ PHP 8 puro (compatível com o PHP 8.0 do XAMPP), PDO/MySQL, Bootstrap 5 servido 
 ## Pastas
 | Pasta | Conteúdo |
 |---|---|
-| `/` | páginas públicas: `index.php`, `catalogo.php`, `produto.php`, `sacola.php`, `checkout.php`, `pedido.php` |
+| `/` | páginas públicas: `index.php`, `catalogo.php`, `produto.php`, `sacola.php`, `checkout.php`, `pedido.php`, `atendimento.php` |
 | `conta/` | `login.php`, `cadastro.php`, `logout.php`, `pedidos.php` |
 | `actions/` | `cart.php`, `auth.php`, `checkout.php` — só POST |
 | `admin/` | painel; `_guard.php` no topo de todas as páginas |
 | `config/` | `env.php` (loader), `database.php` (PDO), `app.php` (bootstrap) |
-| `src/` | regras de negócio: `Auth`, `Cart`, `Csrf`, `ProductRepository`, `CategoryRepository`, `OrderService`, `Upload`, `helpers.php` |
+| `src/` | regras de negócio: `Auth`, `Cart`, `Csrf`, `ProductRepository`, `CategoryRepository`, `OrderService`, `ProductAdmin`, `Upload`, `helpers.php` |
 | `views/` | `partials/` (head, header, footer, cartões, flash) e `error.php` |
 | `assets/` | `css/` em camadas, `js/` em módulos pequenos, `img/`, `uploads/` (sem execução de PHP), `vendor/bootstrap` |
 | `database/` | `schema.sql` |
-| `tools/` | `render_watches.py` — gera as imagens de produto (uso opcional em desenvolvimento, não faz parte do runtime) |
+| `tools/` | `render_watches.py` (gera as imagens de produto) e `smoke-test.php` (teste de ponta a ponta pela linha de comando); nenhum dos dois faz parte do runtime |
 
 `config/`, `src/`, `views/`, `database/`, `tools/` e `docs/` têm acesso negado pelo Apache (`.htaccess`).
 
