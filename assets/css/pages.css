@@ -462,7 +462,8 @@
 .order-hero { padding: var(--space-5) 0; border-bottom: var(--line); margin-bottom: var(--space-5); display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: center; }
 .order-hero__mark { width: 84px; height: 84px; color: var(--heritage); }
 .order-hero__mark circle, .order-hero__mark path { fill: none; stroke: currentColor; stroke-width: 1.2; }
-.order-hero__mark path { stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw .9s .3s var(--ease-out) forwards; }
+.order-hero__mark path { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw .9s .3s var(--ease-out) forwards; }
+@media (prefers-reduced-motion: reduce) { .order-hero__mark path { stroke-dashoffset: 0; animation: none; } }
 @keyframes draw { to { stroke-dashoffset: 0; } }
 .order-hero h1 { font-size: var(--fs-h1); font-weight: 400; }
 .order-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 4rem; }
@@ -523,3 +524,4 @@
     .orders-table td { border: 0; padding: .15rem 0; }
 }
 .summary__row > :last-child { white-space: nowrap; }
+.summary__items li > span { white-space: nowrap; }
