@@ -157,7 +157,7 @@
 .collection-tile--d .collection-tile__text { max-width: 58%; }
 /* minimalistas: só tipografia, com uma linha fina */
 .collection-tile--e { border-style: solid; justify-content: flex-start; }
-.collection-tile--e::before { content: ""; position: absolute; left: 1.5rem; right: 1.5rem; top: 50%; height: 1px; background: var(--stone-200); }
+.collection-tile--e .collection-tile__meta { border-top: 1px solid var(--stone-200); padding-top: .9rem; }
 .collection-tile--e .collection-tile__text { margin-top: 0; justify-content: space-between; height: 100%; }
 /* edições especiais: verde Heritage */
 .collection-tile--special { background: var(--heritage); color: var(--ivory); border-color: var(--heritage); }
@@ -282,14 +282,17 @@
     .hero__stage { width: 92vw; }
     .hero__title { font-size: 3.4rem; }
     .hero__point--b { display: none; }
+    .hero__point--a { left: 54%; top: 2%; }
+    .hero__point--c { right: 54%; bottom: 2%; }
     .collections__grid { grid-template-columns: 1fr; grid-template-areas: "a" "b" "c" "d" "e" "f"; }
     .collection-tile--a { min-height: 420px; }
     .collection-tile--a .collection-tile__media { left: 0; bottom: 38%; }
     .collection-tile--a { flex-direction: column; }
     .collection-tile--a .collection-tile__text { max-width: none; }
     .collection-tile--e { min-height: 200px; }
-    .macro__grid { grid-template-columns: 1fr; grid-template-areas: "text" "dial" "crown" "clasp"; }
-    .macro__item--clasp { margin-top: 0; }
+    .macro__grid { gap: 1rem; }
+    .macro__item--clasp { margin-top: 2rem; }
+    .macro__item figcaption { font-size: .8125rem; }
     .featured__grid { grid-template-columns: 1fr 1fr; gap: 2.5rem 1rem; }
     .featured__grid .product-card--tall { grid-column: 1 / -1; }
     .featured__grid .product-card:nth-child(even) { margin-top: 0; }

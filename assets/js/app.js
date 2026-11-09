@@ -47,7 +47,7 @@
         search.hidden = false;
         document.body.style.overflow = 'hidden';
         var input = search.querySelector('input[type="search"]');
-        setTimeout(function () { input.focus(); }, 30);
+        input.focus();
     }
     function closeSearch() {
         search.hidden = true;

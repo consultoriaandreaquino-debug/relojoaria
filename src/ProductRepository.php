@@ -60,9 +60,16 @@ final class ProductRepository
 
         $q = trim((string) ($f['q'] ?? ''));
         if ($q !== '') {
-            $like = '%' . addcslashes($q, '%_\\') . '%';
-            $where[] = '(p.name LIKE ? OR p.description LIKE ? OR c.name LIKE ? OR p.case_material LIKE ? OR p.movement_type LIKE ?)';
-            array_push($params, $like, $like, $like, $like, $like);
+            // casa no início de qualquer palavra: "ouro" acha "ouro rosé", mas não "couro"
+            $escaped = addcslashes($q, '%_\\');
+            $starts = $escaped . '%';
+            $inside = '% ' . $escaped . '%';
+            $parts = [];
+            foreach (['p.name', 'p.description', 'c.name', 'p.case_material', 'p.movement_type', 'p.dial'] as $col) {
+                $parts[] = "($col LIKE ? OR $col LIKE ?)";
+                array_push($params, $starts, $inside);
+            }
+            $where[] = '(' . implode(' OR ', $parts) . ')';
         }
         if (!empty($f['colecao'])) {
             $where[] = 'c.slug = ?';
