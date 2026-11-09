@@ -34,9 +34,9 @@ final class Csrf
             return;
         }
         if (wants_json()) {
-            json_response(['ok' => false, 'message' => 'Sua sessão expirou. Recarregue a página e tente de novo.'], 419);
+            json_response(['ok' => false, 'message' => 'Sua sessão expirou. Recarregue a página e tente de novo.'], 403);
         }
-        http_response_code(419);
+        http_response_code(403);
         $title = 'Sessão expirada';
         $message = 'Por segurança, o formulário expirou. Volte, recarregue a página e envie de novo.';
         require BASE_PATH . '/views/error.php';

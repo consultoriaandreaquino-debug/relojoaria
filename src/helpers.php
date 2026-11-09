@@ -238,3 +238,16 @@ function not_found(string $message = 'Não encontramos esta página.'): void
     require BASE_PATH . '/views/error.php';
     exit;
 }
+
+/** Divide "Ondina 39" em ["Ondina", "39"] para o título em duas vozes. */
+function split_name(string $name): array
+{
+    $pos = mb_strrpos($name, ' ');
+    return $pos === false ? [$name, ''] : [mb_substr($name, 0, $pos), mb_substr($name, $pos + 1)];
+}
+
+/** Diâmetro sem zeros à direita: 39,0 -> 39 ; 38,5 -> 38,5 */
+function mm($value): string
+{
+    return rtrim(rtrim(number_format((float) $value, 1, ',', ''), '0'), ',');
+}

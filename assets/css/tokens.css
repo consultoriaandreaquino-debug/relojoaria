@@ -1,0 +1,70 @@
+/* =========================================================
+   Tokens da marca Morvane
+   Três cores de marca + neutros de apoio. Nada além disso.
+   ========================================================= */
+:root {
+    /* Marca */
+    --midnight: #071525;
+    --heritage: #123D32;
+    --champagne: #B99A62;
+
+    /* Neutros de apoio (fundo, texto, contraste) */
+    --ivory: #F6F2EA;
+    --paper: #FBF9F5;
+    --ink: #14181D;
+    --stone-700: #4A4741;
+    --stone-600: #6B665E;
+    --stone-400: #A39E94;
+    --stone-200: #E4DED3;
+    --stone-100: #EFEBE3;
+    --black: #05080C;
+
+    /* Derivados (mesmas cores, outras opacidades) */
+    --midnight-90: rgba(7, 21, 37, .9);
+    --midnight-line: rgba(246, 242, 234, .14);
+    --ink-line: rgba(20, 24, 29, .12);
+    --champagne-soft: rgba(185, 154, 98, .35);
+
+    /* Tipografia */
+    --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+    --fs-display: clamp(3rem, 2rem + 4.6vw, 6.4rem);
+    --fs-h1: clamp(2.4rem, 1.7rem + 2.8vw, 4.2rem);
+    --fs-h2: clamp(2rem, 1.5rem + 2vw, 3.2rem);
+    --fs-h3: clamp(1.35rem, 1.2rem + .5vw, 1.7rem);
+    --fs-body: 1rem;
+    --fs-small: .875rem;
+    --fs-tech: .6875rem;   /* 11px: ficha técnica, rótulos */
+
+    --track-tech: .18em;
+    --track-label: .12em;
+
+    /* Espaço */
+    --space-1: .25rem;
+    --space-2: .5rem;
+    --space-3: 1rem;
+    --space-4: 1.5rem;
+    --space-5: 2.5rem;
+    --space-6: 4rem;
+    --space-7: 6.5rem;
+    --space-8: 9rem;
+    --gutter: clamp(1.25rem, 4vw, 3.5rem);
+    --page-max: 1440px;
+
+    /* Acabamento */
+    --radius: 2px;
+    --line: 1px solid var(--ink-line);
+    --shadow-1: 0 1px 2px rgba(5, 8, 12, .06), 0 8px 24px -12px rgba(5, 8, 12, .18);
+    --shadow-2: 0 2px 4px rgba(5, 8, 12, .08), 0 24px 48px -24px rgba(5, 8, 12, .35);
+
+    --ease: cubic-bezier(.22, .61, .36, 1);
+    --ease-out: cubic-bezier(.16, 1, .3, 1);
+    --dur: .35s;
+
+    --header-h: 76px;
+}
+
+@media (max-width: 767.98px) {
+    :root { --header-h: 64px; }
+}
