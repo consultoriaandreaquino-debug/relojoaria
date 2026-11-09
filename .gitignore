@@ -1,0 +1,30 @@
+# Credenciais reais
+.env
+
+# Uploads feitos pelo painel (mantém só a pasta)
+assets/uploads/**
+!assets/uploads/.htaccess
+!assets/uploads/products/
+!assets/uploads/products/.gitkeep
+
+# Imagens de referência de terceiros (contêm marcas registradas; ficam só na máquina local)
+docs/referencias/*.jpg
+docs/referencias/*.png
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.sublime-*
+
+# Temporários
+*.log
+*.tmp
+*.bak
+tmp/
+__pycache__/

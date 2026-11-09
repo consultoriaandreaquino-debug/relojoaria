@@ -1,0 +1,22 @@
+# Configuração do Apache para a boutique.
+Options -Indexes
+DirectoryIndex index.php
+
+# Arquivos sensíveis e ocultos
+<FilesMatch "^(\.env.*|\.git.*|composer\.(json|lock)|.*\.(sql|md|py|log|ini|bak))$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Pastas internas: nunca acessíveis pelo navegador
+    RewriteRule ^(config|src|views|database|tools|docs|\.git)(/|$) - [F,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+ErrorDocument 403 "Acesso negado."
