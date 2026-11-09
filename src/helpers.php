@@ -143,8 +143,8 @@ function int_param($value): ?int
 function input(array $source, string $key, int $max = 255): string
 {
     $value = $source[$key] ?? '';
-    if (!is_string($value)) {
-        return '';
+    if (!is_string($value) || !mb_check_encoding($value, 'UTF-8')) {
+        return ''; // texto com codificação inválida é descartado
     }
     return mb_substr(trim($value), 0, $max);
 }
