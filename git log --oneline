@@ -1,9 +1,0 @@
-507b1a8 test: teste de ponta a ponta em PHP CLI e README de instalação
-5d0afe6 style: ajustes responsivos, busca por início de palavra e página de atendimento
-3512469 feat: painel administrativo com CRUD de produtos, coleções e pedidos
-56441a0 feat: checkout com pagamento simulado e pedido em transação PDO
-d0c6126 feat: cadastro, login e logout com sessões PHP
-c4cddf1 feat: vitrine, catálogo, página do produto e sacola em sessão
-b8329c2 feat: fotografia de estúdio gerada localmente, sem marcas de terceiros
-1a88af1 feat: modelagem do banco com dados de demonstração
-b2f2683 chore: estrutura base, loader de .env, conexão PDO e proteções do Apache
