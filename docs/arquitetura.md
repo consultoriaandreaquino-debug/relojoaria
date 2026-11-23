@@ -20,7 +20,7 @@ PHP 8 puro (compatível com o PHP 8.0 do XAMPP), PDO/MySQL, Bootstrap 5 servido 
 | `views/` | `partials/` (head, header, footer, cartões, flash) e `error.php` |
 | `assets/` | `css/` em camadas, `js/` em módulos pequenos, `img/`, `uploads/` (sem execução de PHP), `vendor/bootstrap` |
 | `database/` | `schema.sql` |
-| `tools/` | `render_watches.py` (gera as imagens de produto), `render_ensaio.py` (cenas do ensaio) e `smoke-test.php` (teste de ponta a ponta pela linha de comando); nenhum dos dois faz parte do runtime |
+| `tools/` | `render_watches.py` (gera as imagens de produto), `render_ensaio.py` (cenas 3D do ensaio, via Blender) e `smoke-test.php` (teste de ponta a ponta pela linha de comando); nenhum dos dois faz parte do runtime |
 
 `config/`, `src/`, `views/`, `database/`, `tools/` e `docs/` têm acesso negado pelo Apache (`.htaccess`).
 

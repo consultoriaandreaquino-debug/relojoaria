@@ -82,4 +82,4 @@ git push -u origin main
 O `.env` não vai para o repositório (está no `.gitignore`); quem clonar copia o `.env.example`.
 
 ## Imagens
-As fotos dos relógios e do ensaio "Fim de semana" são renderizações geradas por `tools/render_watches.py` e `tools/render_ensaio.py`, sem marcas reais. Veja `docs/creditos-imagens.md`.
+As fotos dos relógios são renderizações de `tools/render_watches.py`. As fotos do ensaio "Fim de semana" na home são cenas 3D renderizadas no Blender por `tools/render_ensaio.py` (precisa de `pip install bpy numpy pillow`; o site não depende disso). Nenhuma imagem mostra marca real. Veja `docs/creditos-imagens.md`.

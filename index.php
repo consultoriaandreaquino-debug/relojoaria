@@ -134,31 +134,45 @@ require __DIR__ . '/views/partials/header.php';
 </section>
 <?php endif; ?>
 
-<!-- Ensaio fotográfico: as peças fora do estúdio -->
-<section class="section ensaio" aria-labelledby="ensaioTitulo">
-    <div class="ensaio__head">
-        <p class="eyebrow eyebrow--light">Ensaio · Fim de semana</p>
-        <h2 class="section-title section-title--light" id="ensaioTitulo">Fora da vitrine <em>e no pulso de quem joga</em></h2>
-        <p>Três peças da casa longe do estúdio: no tabuleiro, no clube e no campo, até o sol baixar.</p>
+<!-- Ensaio fotográfico "Fim de semana": fotos em tela cheia -->
+<section class="ensaio" aria-labelledby="ensaioTitulo">
+    <figure class="ensaio__hero">
+        <img src="<?= e(url('assets/img/editorial/ensaio-xadrez.webp')) ?>"
+             srcset="<?= e(url('assets/img/editorial/ensaio-xadrez-sm.webp')) ?> 1200w, <?= e(url('assets/img/editorial/ensaio-xadrez.webp')) ?> 2400w"
+             sizes="100vw"
+             alt="Relógio Heritage Noite 40, em ouro amarelo com mostrador azul-noite, de pé sobre um tabuleiro de nogueira e ébano, entre peças de xadrez douradas"
+             width="2400" height="1500" loading="lazy">
+        <figcaption class="ensaio__intro">
+            <p class="eyebrow eyebrow--light">Ensaio · Fim de semana</p>
+            <h2 class="ensaio__title" id="ensaioTitulo">Fora da vitrine</h2>
+            <p>Três peças da casa longe do estúdio: no tabuleiro, no clube e no campo, até o sol baixar.</p>
+            <a class="ensaio__link" href="<?= e(url('produto.php', ['slug' => 'heritage-noite-40'])) ?>">Heritage Noite 40 <span aria-hidden="true">→</span></a>
+        </figcaption>
+    </figure>
+    <div class="ensaio__pair">
+        <figure class="ensaio__panel">
+            <img src="<?= e(url('assets/img/editorial/ensaio-clube.webp')) ?>"
+                 srcset="<?= e(url('assets/img/editorial/ensaio-clube-sm.webp')) ?> 800w, <?= e(url('assets/img/editorial/ensaio-clube.webp')) ?> 1600w"
+                 sizes="(max-width: 767.98px) 100vw, 50vw"
+                 alt="Relógio Heritage Verde 40, em aço e ouro, sobre o jornal de domingo do Clube AQUINO, com óculos de sol e roupão branco sob sol forte"
+                 width="1600" height="2000" loading="lazy">
+            <figcaption>
+                <span class="eyebrow eyebrow--light">O clube</span>
+                <a href="<?= e(url('produto.php', ['slug' => 'heritage-verde-40'])) ?>">Heritage Verde 40 <span aria-hidden="true">→</span></a>
+            </figcaption>
+        </figure>
+        <figure class="ensaio__panel">
+            <img src="<?= e(url('assets/img/editorial/ensaio-campo.webp')) ?>"
+                 srcset="<?= e(url('assets/img/editorial/ensaio-campo-sm.webp')) ?> 800w, <?= e(url('assets/img/editorial/ensaio-campo.webp')) ?> 1600w"
+                 sizes="(max-width: 767.98px) 100vw, 50vw"
+                 alt="Relógio Altitude GMT 40, com luneta azul, de pé na grama de um green ao pôr do sol, ao lado de uma bola de golfe"
+                 width="1600" height="2000" loading="lazy">
+            <figcaption>
+                <span class="eyebrow eyebrow--light">O campo</span>
+                <a href="<?= e(url('produto.php', ['slug' => 'altitude-gmt-40'])) ?>">Altitude GMT 40 <span aria-hidden="true">→</span></a>
+            </figcaption>
+        </figure>
     </div>
-    <figure class="ensaio__item ensaio__item--xadrez">
-        <a href="<?= e(url('produto.php', ['slug' => 'heritage-noite-40'])) ?>">
-            <img src="<?= e(url('assets/img/editorial/ensaio-xadrez.webp')) ?>" alt="Relógio Heritage Noite 40, em ouro com mostrador azul-noite, de pé sobre um tabuleiro de xadrez de nogueira e ébano com peças douradas, céu e mar ao fundo" width="1200" height="1500" loading="lazy">
-        </a>
-        <figcaption><span class="eyebrow eyebrow--light">O tabuleiro</span>Heritage Noite 40. Caixa inteira em ouro amarelo 18k e mostrador azul-noite.</figcaption>
-    </figure>
-    <figure class="ensaio__item ensaio__item--campo">
-        <a href="<?= e(url('produto.php', ['slug' => 'altitude-gmt-40'])) ?>">
-            <img src="<?= e(url('assets/img/editorial/ensaio-campo.webp')) ?>" alt="Relógio Altitude GMT 40 afivelado no volante de um carrinho de golfe, com o campo e o pôr do sol desfocados ao fundo" width="1600" height="1200" loading="lazy">
-        </a>
-        <figcaption><span class="eyebrow eyebrow--light">O campo</span>Altitude GMT 40. Um ponteiro para a hora de casa, outro para a do lugar onde se joga.</figcaption>
-    </figure>
-    <figure class="ensaio__item ensaio__item--clube">
-        <a href="<?= e(url('produto.php', ['slug' => 'heritage-verde-40'])) ?>">
-            <img src="<?= e(url('assets/img/editorial/ensaio-clube.webp')) ?>" alt="Relógio Heritage Verde 40 sobre o jornal de domingo do Clube AQUINO, em cima de um roupão branco com vivo verde, sob o sol" width="1200" height="1500" loading="lazy">
-        </a>
-        <figcaption><span class="eyebrow eyebrow--light">O clube</span>Heritage Verde 40, aço e ouro, sobre o jornal de domingo.</figcaption>
-    </figure>
 </section>
 
 <!-- Campanha em verde Heritage -->

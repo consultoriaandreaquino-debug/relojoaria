@@ -40,6 +40,14 @@ Anúncio vertical: relógio bicolor com mostrador verde sobre almofada de camur�
 
 **Usar para (linguagem C):** seção de campanha especial em verde Heritage; textura natural (mármore, camurça) em baixa opacidade; tom emocional de "conquista"; composição vertical com texto curto embaixo, útil para o mobile. Não usar logotipo, coroa ou slogan.
 
+## Ensaio "Fim de semana" (enviadas pelo fundador, não estão no repositório)
+Três fotos de estilo de vida usadas como direção do ensaio da home:
+- **Xadrez**: homem de terno escuro movendo peças de xadrez douradas num tabuleiro de madeira, relógio dourado no pulso, céu e mar ao fundo, profundidade de campo curta.
+- **Clube**: mulher de roupão branco com vivo verde segurando um jornal de clube contra o céu azul, avião ao fundo, sol forte.
+- **Campo**: vista de dentro de um carrinho de golfe ao pôr do sol, campo e green em luz dourada.
+
+**Usar para:** luz natural (sol duro de meio-dia, pôr do sol dourado), dourado contra azul, objetos de lazer de alto padrão e desfoque de lente. As fotos têm marcas de terceiros e pessoas reais: não foram copiadas nem publicadas. As cenas do site são 3D (`tools/render_ensaio.py`), sem pessoas.
+
 ---
 
 ## Motivos que devem aparecer no projeto

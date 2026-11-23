@@ -100,13 +100,15 @@ Todos os testes rodaram contra o Apache do XAMPP em `http://localhost/relojoaria
 | Rótulos técnicos do hero saíam da tela no celular; linha decorativa cortava texto | Posições e estilos ajustados para ≤ 575 px |
 | Foco da pesquisa entrava com atraso e perdia o que era digitado | Foco imediato |
 | Marca de "pedido confirmado" não aparecia com redução de movimento | Traço visível por padrão nesse modo |
+| Troca de marca para AQUINO (fundador e CEO André Aquino): nome no mostrador das fotos, banco, e-mails e textos | Nome redesenhado nas 18 peças; `schema.sql` com novos hashes; teste de fumaça atualizado e 73/73 no Apache + MariaDB |
+| Primeira versão do ensaio em 2D ficou artificial | Refeito em 3D com Blender/Cycles (`tools/render_ensaio.py`) e exibido em tela cheia |
 | `src/Upload.php` ficou fora do commit do painel (`3512469`) e entrou no commit seguinte (`5d0afe6`) | Registrado aqui; o histórico não foi reescrito |
 
 ---
 
 ## 4. Pendências e limitações reais
 - **Push para o GitHub não foi feito** (instrução explícita). A entrega exige o link do repositório remoto; os passos estão na seção 7.
-- **Fotografia:** as imagens são renderizações geradas por script, coerentes e sem marcas, mas não são fotos reais. Para um resultado fotográfico, substitua os arquivos em `assets/img/products/` (mesmos nomes) ou envie novas fotos pelo painel.
+- **Fotografia:** as fotos de produto são renderizações 2D e as do ensaio são renderizações 3D; nenhuma é foto de câmera nem mostra pessoas. Para um resultado fotográfico, substitua os arquivos em `assets/img/products/` (mesmos nomes) ou envie novas fotos pelo painel.
 - **Fontes e Google Fonts:** Cormorant Garamond e Manrope vêm do Google Fonts; sem internet, o site usa as fontes de reserva (Georgia/system-ui). O Bootstrap é local e funciona offline.
 - **Página 404 do Apache:** URLs que não existem como arquivo mostram a página padrão do Apache (o `ErrorDocument` exigiria fixar o caminho `/relojoaria` no `.htaccess`). Produtos e pedidos inexistentes usam a página 404 própria.
 - **Pagamento e e-mail:** simulados. Nenhuma cobrança, nenhum e-mail enviado.
