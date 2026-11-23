@@ -160,7 +160,7 @@ final class OrderService
             if ($e instanceof DomainException) {
                 throw $e;
             }
-            error_log('[morvane] falha no checkout: ' . $e->getMessage());
+            error_log('[aquino] falha no checkout: ' . $e->getMessage());
             throw new DomainException('Não conseguimos concluir o pedido agora. Nada foi cobrado e sua sacola continua salva. Tente de novo em instantes.');
         }
     }

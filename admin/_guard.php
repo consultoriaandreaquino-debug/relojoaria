@@ -14,7 +14,7 @@ if (!Auth::check()) {
 if (!Auth::isAdmin()) {
     http_response_code(403);
     $title = 'Acesso restrito';
-    $message = 'Esta área é só para a equipe da Morvane.';
+    $message = 'Esta área é só para a equipe da AQUINO.';
     require BASE_PATH . '/views/error.php';
     exit;
 }

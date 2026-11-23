@@ -1,4 +1,4 @@
-# Auditoria final — Morvane
+# Auditoria final — AQUINO
 
 Data: 09/11/2026 · Ambiente de teste: Windows 11, XAMPP (Apache 2.4, PHP 8.0.30, MariaDB 10.4.32), navegador embutido do Claude (Chromium).
 
@@ -127,8 +127,8 @@ Todos os testes rodaram contra o Apache do XAMPP em `http://localhost/relojoaria
 ## 6. Credenciais de demonstração
 | Perfil | E-mail | Senha |
 |---|---|---|
-| Administrador | admin@morvane.com.br | Morvane@Admin26 |
-| Cliente | cliente@morvane.com.br | Morvane@Cliente26 |
+| Administrador | admin@aquino.com.br | Aquino@Admin26 |
+| Cliente | cliente@aquino.com.br | Aquino@Cliente26 |
 
 Cartão de teste: `4242 4242 4242 4242`, validade futura, CVV de 3 dígitos.
 

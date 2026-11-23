@@ -73,7 +73,7 @@ if ($action === 'register') {
         throw $e;
     }
     Auth::login($id);
-    flash('success', 'Conta criada. Bem-vindo à Morvane, ' . strtok($data['name'], ' ') . '.');
+    flash('success', 'Conta criada. Bem-vindo à AQUINO, ' . strtok($data['name'], ' ') . '.');
     redirect($next !== '' ? $next : 'conta/pedidos.php');
 }
 

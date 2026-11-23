@@ -40,7 +40,7 @@ $currentGender = $_GET['genero'] ?? '';
             </nav>
         </div>
 
-        <a class="site-header__brand" href="<?= e(url('')) ?>" aria-label="Morvane, página inicial">
+        <a class="site-header__brand" href="<?= e(url('')) ?>" aria-label="AQUINO, página inicial">
             <?php partial('logo'); ?>
         </a>
 

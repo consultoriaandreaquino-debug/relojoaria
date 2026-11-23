@@ -13,7 +13,7 @@ try {
     // se o próprio cabeçalho falhar (ex.: banco fora do ar), descarta o que saiu e mostra só a mensagem
     ob_end_clean();
     $chrome = false;
-    echo '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Morvane</title></head><body style="font-family:sans-serif;padding:3rem">';
+    echo '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>AQUINO</title></head><body style="font-family:sans-serif;padding:3rem">';
 }
 ?>
 <main id="conteudo" class="error-page">

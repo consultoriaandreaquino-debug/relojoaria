@@ -43,8 +43,8 @@
                 var mini = document.querySelector('[data-mini-cart]');
                 if (mini && data.miniCart) mini.innerHTML = data.miniCart;
                 if (typeof data.count === 'number') updateCount(data.count);
-                if (window.Morvane && window.Morvane.toast) {
-                    window.Morvane.toast(data.message, data.ok ? 'success' : 'error',
+                if (window.Aquino && window.Aquino.toast) {
+                    window.Aquino.toast(data.message, data.ok ? 'success' : 'error',
                         data.ok ? { href: form.dataset.bagUrl || '#', label: 'Ver sacola' } : null);
                 }
                 if (data.ok && form.dataset.openMini === '1' && window.bootstrap) {

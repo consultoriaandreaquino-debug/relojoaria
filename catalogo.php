@@ -108,7 +108,7 @@ require __DIR__ . '/views/partials/header.php';
         <?php if ($filters['q'] !== ''): ?>
         <p>Não encontramos nada para “<?= e($filters['q']) ?>”. Confira a grafia ou tente um termo mais simples, como “aço” ou “cronógrafo”.</p>
         <?php else: ?>
-        <p>Tente outra coleção ou tire o filtro de disponibilidade. Se procura algo específico, a boutique pode ajudar pelo (11) 3000-1968.</p>
+        <p>Tente outra coleção ou tire o filtro de disponibilidade. Se procura algo específico, a boutique pode ajudar pelo (11) 3000-2026.</p>
         <?php endif; ?>
         <a class="btn-line" href="<?= e(url('catalogo.php')) ?>">Ver todas as peças</a>
     </div>

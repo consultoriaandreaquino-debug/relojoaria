@@ -1,6 +1,6 @@
-# Morvane — boutique de relojoaria
+# AQUINO — boutique de relojoaria
 
-E-commerce acadêmico de relógios premium, feito em **PHP 8 + PDO + MySQL/MariaDB + Bootstrap 5**, sem frameworks, pronto para o XAMPP. Marca fictícia, pagamentos simulados.
+E-commerce acadêmico de relógios premium, feito em **PHP 8 + PDO + MySQL/MariaDB + Bootstrap 5**, sem frameworks, pronto para o XAMPP. Fundador e CEO: André Aquino. Pagamentos simulados.
 
 - Vitrine com revelação animada do relógio, coleções, catálogo com busca, filtros e paginação
 - Página de produto com galeria, zoom e ficha técnica
@@ -36,8 +36,8 @@ E-commerce acadêmico de relógios premium, feito em **PHP 8 + PDO + MySQL/Maria
 ## Contas de demonstração
 | Perfil | E-mail | Senha |
 |---|---|---|
-| Administrador | admin@morvane.com.br | Morvane@Admin26 |
-| Cliente | cliente@morvane.com.br | Morvane@Cliente26 |
+| Administrador | admin@aquino.com.br | Aquino@Admin26 |
+| Cliente | cliente@aquino.com.br | Aquino@Cliente26 |
 
 As senhas estão no banco apenas como hash (`password_hash`). Cartão de teste no checkout: `4242 4242 4242 4242`, qualquer validade futura, CVV de 3 dígitos.
 
@@ -53,7 +53,7 @@ views/      partes de layout (cabeçalho, rodapé, cartões) e página de erro
 assets/     css em camadas, js em módulos, imagens, vendor/bootstrap, uploads
 database/   schema.sql
 docs/       requisitos, identidade, arquitetura, créditos de imagens, auditoria
-tools/      render_watches.py (gera as fotos) e smoke-test.php (teste de ponta a ponta)
+tools/      render_watches.py e render_ensaio.py (geram as fotos) e smoke-test.php (teste de ponta a ponta)
 ```
 Mais detalhes em `docs/arquitetura.md` e `docs/identidade.md`.
 
@@ -82,4 +82,4 @@ git push -u origin main
 O `.env` não vai para o repositório (está no `.gitignore`); quem clonar copia o `.env.example`.
 
 ## Imagens
-As fotos dos relógios são renderizações geradas por `tools/render_watches.py`, sem marcas reais. Veja `docs/creditos-imagens.md`.
+As fotos dos relógios e do ensaio "Fim de semana" são renderizações geradas por `tools/render_watches.py` e `tools/render_ensaio.py`, sem marcas reais. Veja `docs/creditos-imagens.md`.

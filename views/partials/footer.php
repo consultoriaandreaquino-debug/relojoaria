@@ -5,7 +5,7 @@
     <div class="site-footer__top">
         <div class="site-footer__brand">
             <?php partial('logo', ['logoClass' => 'logo--footer']); ?>
-            <p>Relojoaria desde 1968. Oficina e boutique na Rua Oscar Freire, São Paulo.</p>
+            <p>Relojoaria fundada por André Aquino. Oficina e boutique na Rua Oscar Freire, São Paulo.</p>
         </div>
         <nav class="site-footer__col" aria-label="Coleções">
             <h2>Coleções</h2>
@@ -40,11 +40,11 @@
                 <li><a href="https://www.youtube.com/" rel="noopener" target="_blank">YouTube</a></li>
                 <li><a href="https://www.pinterest.com/" rel="noopener" target="_blank">Pinterest</a></li>
             </ul>
-            <p class="site-footer__contact">(11) 3000-1968<br>atendimento@morvane.com.br</p>
+            <p class="site-footer__contact">(11) 3000-2026<br>atendimento@aquino.com.br</p>
         </div>
     </div>
     <div class="site-footer__bottom">
-        <p>© <?= date('Y') ?> Morvane Relojoaria. Projeto acadêmico: marca fictícia, pagamentos simulados.</p>
+        <p>© <?= date('Y') ?> AQUINO Relojoaria. Projeto acadêmico: vendas e pagamentos simulados.</p>
         <p>Imagens de produto renderizadas pela própria casa.</p>
     </div>
 </footer>

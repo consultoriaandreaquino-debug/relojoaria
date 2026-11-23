@@ -11,7 +11,7 @@ load_env(BASE_PATH . '/.env');
 
 define('APP_DEBUG', env_bool('APP_DEBUG'));
 define('APP_URL', rtrim((string) env('APP_URL', ''), '/'));
-define('APP_NAME', 'Morvane');
+define('APP_NAME', 'AQUINO');
 
 date_default_timezone_set('America/Sao_Paulo');
 mb_internal_encoding('UTF-8');
@@ -33,7 +33,7 @@ require BASE_PATH . '/src/helpers.php';
 // Sessão com cookie HttpOnly e SameSite=Lax
 if (session_status() !== PHP_SESSION_ACTIVE) {
     $https = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off');
-    session_name('morvane_sid');
+    session_name('aquino_sid');
     session_set_cookie_params([
         'lifetime' => 0,
         'path'     => base_path() . '/',
@@ -48,7 +48,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 
 // Erros não tratados: em produção, mensagem neutra sem detalhes do banco
 set_exception_handler(static function (Throwable $e): void {
-    error_log('[morvane] ' . $e->getMessage() . ' em ' . $e->getFile() . ':' . $e->getLine());
+    error_log('[aquino] ' . $e->getMessage() . ' em ' . $e->getFile() . ':' . $e->getLine());
     if (!headers_sent()) {
         http_response_code(500);
     }

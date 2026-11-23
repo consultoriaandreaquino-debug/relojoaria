@@ -205,10 +205,10 @@ function format_date(string $datetime, bool $withTime = false): string
     return $withTime ? date('d/m/Y', $ts) . ' às ' . date('H:i', $ts) : date('d/m/Y', $ts);
 }
 
-/** Número do pedido exibido ao cliente: MV-000123 */
+/** Número do pedido exibido ao cliente: AQ-000123 */
 function order_code(int $id): string
 {
-    return 'MV-' . str_pad((string) $id, 6, '0', STR_PAD_LEFT);
+    return 'AQ-' . str_pad((string) $id, 6, '0', STR_PAD_LEFT);
 }
 
 /** Gera slug ASCII a partir de um texto em português. */

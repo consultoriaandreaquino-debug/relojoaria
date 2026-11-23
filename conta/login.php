@@ -50,8 +50,8 @@ require BASE_PATH . '/views/partials/header.php';
             <?php if (APP_DEBUG): ?>
             <div class="auth__demo">
                 <strong>Ambiente de demonstração</strong><br>
-                Cliente: cliente@morvane.com.br / Morvane@Cliente26<br>
-                Admin: admin@morvane.com.br / Morvane@Admin26
+                Cliente: cliente@aquino.com.br / Aquino@Cliente26<br>
+                Admin: admin@aquino.com.br / Aquino@Admin26
             </div>
             <?php endif; ?>
         </form>

@@ -79,9 +79,9 @@
         setTimeout(function () { if (el.isConnected) el.remove(); }, 7000);
     });
 
-    window.Morvane = window.Morvane || {};
+    window.Aquino = window.Aquino || {};
     /** Mostra um aviso curto no canto da tela. */
-    window.Morvane.toast = function (message, type, link) {
+    window.Aquino.toast = function (message, type, link) {
         var region = document.querySelector('[data-toasts]');
         if (!region) return;
         var el = document.createElement('div');

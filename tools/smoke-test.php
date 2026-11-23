@@ -93,7 +93,7 @@ final class Browser
     }
 }
 
-echo "Morvane · teste de fumaça em $base\n\n";
+echo "AQUINO · teste de fumaça em $base\n\n";
 
 echo "Proteções do servidor\n";
 $v = new Browser($base);
@@ -156,7 +156,7 @@ $v->get('checkout.php');
 check('checkout exige login', $v->status === 303 && str_contains($v->location, 'conta/login.php'));
 $email = 'smoke' . bin2hex(random_bytes(3)) . '@exemplo.com';
 $t = $v->token('conta/cadastro.php');
-$v->post('actions/auth.php', ['csrf_token' => $t, 'action' => 'register', 'name' => 'Teste Fumaça', 'email' => 'cliente@morvane.com.br', 'password' => 'Senha1234', 'password_confirm' => 'Senha1234']);
+$v->post('actions/auth.php', ['csrf_token' => $t, 'action' => 'register', 'name' => 'Teste Fumaça', 'email' => 'cliente@aquino.com.br', 'password' => 'Senha1234', 'password_confirm' => 'Senha1234']);
 check('e-mail duplicado é recusado', str_contains($v->get('conta/cadastro.php'), 'já tem cadastro'));
 $v->post('actions/auth.php', ['csrf_token' => $t, 'action' => 'register', 'name' => 'Teste Fumaça', 'email' => $email, 'password' => 'Senha1234', 'password_confirm' => 'Senha1234', 'next' => parse_url($base, PHP_URL_PATH) . '/checkout.php']);
 check('cadastro volta ao checkout', str_contains($v->location, 'checkout.php'));
@@ -203,7 +203,7 @@ check('reajuste não altera pedido antigo', $q('SELECT unit_price FROM order_ite
 $pdo->exec('UPDATE products SET price = price - 1000 WHERE id = 3');
 $other = new Browser($base);
 $t2 = $other->token('conta/login.php');
-$other->post('actions/auth.php', ['csrf_token' => $t2, 'action' => 'login', 'email' => 'cliente@morvane.com.br', 'password' => 'Morvane@Cliente26']);
+$other->post('actions/auth.php', ['csrf_token' => $t2, 'action' => 'login', 'email' => 'cliente@aquino.com.br', 'password' => 'Aquino@Cliente26']);
 $other->get('pedido.php?id=' . $oid);
 check('cliente não vê pedido de outro', $other->status === 404);
 
@@ -215,7 +215,7 @@ $anon->get('admin/produtos.php');
 check('visitante vai para o login', $anon->status === 303 && str_contains($anon->location, 'login.php'));
 $adm = new Browser($base);
 $t = $adm->token('conta/login.php');
-$adm->post('actions/auth.php', ['csrf_token' => $t, 'action' => 'login', 'email' => 'admin@morvane.com.br', 'password' => 'Morvane@Admin26']);
+$adm->post('actions/auth.php', ['csrf_token' => $t, 'action' => 'login', 'email' => 'admin@aquino.com.br', 'password' => 'Aquino@Admin26']);
 foreach (['admin/', 'admin/produtos.php', 'admin/produto-form.php', 'admin/categorias.php', 'admin/pedidos.php', 'admin/clientes.php', "admin/pedidos.php?id=$oid"] as $p) {
     $adm->get($p);
     check("admin abre $p", $adm->status === 200);

@@ -1,5 +1,5 @@
 """
-Gera as fotografias de estúdio dos relógios Morvane (sem marcas reais).
+Gera as fotografias de estúdio dos relógios AQUINO (sem marcas reais).
 
 Uso (opcional, só em desenvolvimento):
     python tools/render_watches.py            # todas as peças + editoriais
@@ -26,8 +26,20 @@ FONTS = Path("C:/Windows/Fonts")
 SS = 2  # supersampling
 
 
+BRAND = "AQUINO"
+
+# Equivalentes livres (mesmas métricas) para quando as fontes do Windows não existem (Linux/macOS).
+_FALLBACK = {
+    "times.ttf": "liberation/LiberationSerif-Regular.ttf",
+    "arial.ttf": "liberation/LiberationSans-Regular.ttf",
+    "arialbd.ttf": "liberation/LiberationSans-Bold.ttf",
+    "georgia.ttf": "dejavu/DejaVuSerif.ttf",
+}
+
+
 def font(name: str, size: int) -> ImageFont.FreeTypeFont:
-    for candidate in (FONTS / name, Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf")):
+    linux = Path("/usr/share/fonts/truetype")
+    for candidate in (FONTS / name, linux / _FALLBACK.get(name, "-"), linux / "dejavu/DejaVuSerif.ttf"):
         if candidate.exists():
             return ImageFont.truetype(str(candidate), size)
     return ImageFont.load_default()
@@ -519,7 +531,7 @@ def draw_print(L: Layer, s: Spec, cx, cy, Rd):
             text_at(img, str(val), f, *rot(cx, cy, sec * 6, Rd * 0.965), sec * 6)
     # marca e linha do calibre
     f_brand = font("times.ttf", int(Rd * 0.105))
-    spaced_text(img, "MORVANE", f_brand, cx, cy - Rd * 0.42, spacing=Rd * 0.018)
+    spaced_text(img, BRAND, f_brand, cx, cy - Rd * 0.42, spacing=Rd * 0.018)
     f_small = font("arial.ttf", int(Rd * 0.043))
     y_label = cy - Rd * 0.27 if s.small_seconds else cy + Rd * 0.40
     if not s.chrono:
@@ -971,7 +983,7 @@ def editorial_clasp():
     t = 0.25 + 0.7 * np.clip(np.sin(v * math.pi), 0, 1) ** 0.5 * (0.7 + 0.3 * np.sin(u * math.pi))
     L.over(mat_rgb("gold", t), plate)
     img = Image.new("L", (w, h), 0)
-    spaced_text(img, "MORVANE", font("times.ttf", int(h * 0.05)), w / 2, (py0 + py1) / 2, spacing=w * 0.015)
+    spaced_text(img, BRAND, font("times.ttf", int(h * 0.05)), w / 2, (py0 + py1) / 2, spacing=w * 0.015)
     engr = np.asarray(img.filter(ImageFilter.GaussianBlur(1.2)), np.float32) / 255
     L.darken(engr * 0.55)
     arr = composite(np.zeros((h, w, 3), np.float32), L)
@@ -1060,7 +1072,7 @@ def placeholder_svg():
         '<rect width="800" height="1000" fill="#EFEBE3"/>'
         '<circle cx="400" cy="470" r="170" fill="none" stroke="#B99A62" stroke-width="1.5"/>'
         '<line x1="400" y1="300" x2="400" y2="325" stroke="#B99A62" stroke-width="1.5"/>'
-        '<text x="400" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="9" fill="#6B665E">MORVANE</text>'
+        '<text x="400" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="9" fill="#6B665E">AQUINO</text>'
         '</svg>'
     )
     (ROOT / "assets" / "img" / "placeholder.svg").write_text(svg, encoding="utf-8")

@@ -1,15 +1,15 @@
-# Identidade — Morvane
+# Identidade — AQUINO
 
 ## Nome
-**Morvane** — casa de relojoaria fictícia criada para este projeto. Nome inventado, sem relação com marcas existentes. A história usada no site (fundação em 1968, em São Paulo, pela família Morvane) é ficção da marca.
+**AQUINO** — casa de relojoaria criada para este projeto. Fundador e CEO: **André Aquino**. O nome vem do sobrenome do fundador e não tem relação com marcas existentes. A história contada no site (fundação em São Paulo, calibres próprios, séries Heritage de fundação) faz parte da apresentação da marca.
 
-Assinatura curta: **Morvane · Relojoaria desde 1968**
+Assinatura curta: **AQUINO · Relojoaria**
 Frase da casa: **"Para os momentos que ficam."**
 
 A ideia central: um relógio marca uma conquista, um começo, uma herança. A casa fala de peças que acompanham a vida de alguém, não de tecnologia ou de status.
 
 ## Logotipo tipográfico
-- Palavra `MORVANE` em **Cormorant Garamond 500**, caixa alta, tracking `0.32em`.
+- Palavra `AQUINO` em **Cormorant Garamond 500**, caixa alta, tracking `0.32em`.
 - Símbolo: um aro fino (1px) com uma única marcação de minuto às 12h, em champagne — lembra o rehaut de um mostrador. Construído em SVG inline (`views/partials/logo.php`), sem imagem.
 - Versões: clara (marfim sobre Midnight) e escura (Midnight sobre marfim). O símbolo pode aparecer sozinho como favicon.
 - Nada de coroas, brasões ou ornamentos que lembrem marcas reais.

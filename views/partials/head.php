@@ -3,8 +3,8 @@
  * Abertura do documento.
  * Variáveis: $title, $description, $bodyClass, $headerVariant ('overlay' | 'light' | 'dark')
  */
-$pageTitle = isset($title) && $title !== '' ? $title . ' · ' . APP_NAME : APP_NAME . ' · Relojoaria desde 1968';
-$pageDescription = $description ?? 'Morvane, casa de relojoaria fundada em São Paulo em 1968. Relógios automáticos, cronógrafos e edições numeradas.';
+$pageTitle = isset($title) && $title !== '' ? $title . ' · ' . APP_NAME : APP_NAME . ' · Relojoaria';
+$pageDescription = $description ?? 'AQUINO, casa de relojoaria fundada em São Paulo por André Aquino. Relógios automáticos, cronógrafos e edições numeradas.';
 ?>
 <!doctype html>
 <html lang="pt-BR">

@@ -24,8 +24,8 @@ require __DIR__ . '/views/partials/header.php';
 
         <section id="contato">
             <h2>Fale com a boutique</h2>
-            <p>Telefone e WhatsApp: (11) 3000-1968, de segunda a sábado, das 10h às 19h.</p>
-            <p>E-mail: atendimento@morvane.com.br. Respondemos em até um dia útil.</p>
+            <p>Telefone e WhatsApp: (11) 3000-2026, de segunda a sábado, das 10h às 19h.</p>
+            <p>E-mail: atendimento@aquino.com.br. Respondemos em até um dia útil.</p>
             <p>Boutique e oficina: Rua Oscar Freire, São Paulo. Visitas com hora marcada.</p>
         </section>
 
@@ -38,7 +38,7 @@ require __DIR__ . '/views/partials/header.php';
         <section id="garantia">
             <h2>Garantia e revisão</h2>
             <p>Cada relógio tem 5 anos de garantia contra defeitos de fabricação. Recomendamos uma revisão completa a cada 5 a 7 anos de uso.</p>
-            <p>A oficina revisa qualquer Morvane, de qualquer época, mesmo fora da garantia. O orçamento é enviado antes de qualquer serviço.</p>
+            <p>A oficina revisa qualquer AQUINO, de qualquer ano, mesmo fora da garantia. O orçamento é enviado antes de qualquer serviço.</p>
         </section>
 
         <section id="trocas">
@@ -55,7 +55,7 @@ require __DIR__ . '/views/partials/header.php';
 
         <section id="termos">
             <h2>Termos de uso</h2>
-            <p>Este site é um projeto acadêmico. A Morvane é uma marca fictícia, os produtos não são vendidos de verdade e nenhum pagamento é cobrado.</p>
+            <p>Este site é um projeto acadêmico. Os produtos não são vendidos de verdade e nenhum pagamento é cobrado.</p>
         </section>
     </div>
 </main>

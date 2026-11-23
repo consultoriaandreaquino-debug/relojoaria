@@ -101,7 +101,7 @@ require __DIR__ . '/views/partials/header.php';
             </form>
             <?php else: ?>
             <div class="buy buy--out">
-                <p>Esta peça esgotou. A oficina monta novas unidades em pequenos lotes; a boutique avisa quando houver reposição pelo (11) 3000-1968.</p>
+                <p>Esta peça esgotou. A oficina monta novas unidades em pequenos lotes; a boutique avisa quando houver reposição pelo (11) 3000-2026.</p>
                 <button type="button" class="btn-solid" disabled>Esgotado</button>
             </div>
             <?php endif; ?>

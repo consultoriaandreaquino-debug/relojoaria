@@ -134,6 +134,33 @@ require __DIR__ . '/views/partials/header.php';
 </section>
 <?php endif; ?>
 
+<!-- Ensaio fotográfico: as peças fora do estúdio -->
+<section class="section ensaio" aria-labelledby="ensaioTitulo">
+    <div class="ensaio__head">
+        <p class="eyebrow eyebrow--light">Ensaio · Fim de semana</p>
+        <h2 class="section-title section-title--light" id="ensaioTitulo">Fora da vitrine <em>e no pulso de quem joga</em></h2>
+        <p>Três peças da casa longe do estúdio: no tabuleiro, no clube e no campo, até o sol baixar.</p>
+    </div>
+    <figure class="ensaio__item ensaio__item--xadrez">
+        <a href="<?= e(url('produto.php', ['slug' => 'heritage-noite-40'])) ?>">
+            <img src="<?= e(url('assets/img/editorial/ensaio-xadrez.webp')) ?>" alt="Relógio Heritage Noite 40, em ouro com mostrador azul-noite, de pé sobre um tabuleiro de xadrez de nogueira e ébano com peças douradas, céu e mar ao fundo" width="1200" height="1500" loading="lazy">
+        </a>
+        <figcaption><span class="eyebrow eyebrow--light">O tabuleiro</span>Heritage Noite 40. Caixa inteira em ouro amarelo 18k e mostrador azul-noite.</figcaption>
+    </figure>
+    <figure class="ensaio__item ensaio__item--campo">
+        <a href="<?= e(url('produto.php', ['slug' => 'altitude-gmt-40'])) ?>">
+            <img src="<?= e(url('assets/img/editorial/ensaio-campo.webp')) ?>" alt="Relógio Altitude GMT 40 afivelado no volante de um carrinho de golfe, com o campo e o pôr do sol desfocados ao fundo" width="1600" height="1200" loading="lazy">
+        </a>
+        <figcaption><span class="eyebrow eyebrow--light">O campo</span>Altitude GMT 40. Um ponteiro para a hora de casa, outro para a do lugar onde se joga.</figcaption>
+    </figure>
+    <figure class="ensaio__item ensaio__item--clube">
+        <a href="<?= e(url('produto.php', ['slug' => 'heritage-verde-40'])) ?>">
+            <img src="<?= e(url('assets/img/editorial/ensaio-clube.webp')) ?>" alt="Relógio Heritage Verde 40 sobre o jornal de domingo do Clube AQUINO, em cima de um roupão branco com vivo verde, sob o sol" width="1200" height="1500" loading="lazy">
+        </a>
+        <figcaption><span class="eyebrow eyebrow--light">O clube</span>Heritage Verde 40, aço e ouro, sobre o jornal de domingo.</figcaption>
+    </figure>
+</section>
+
 <!-- Campanha em verde Heritage -->
 <?php if ($special && $specialProducts): ?>
 <section class="campaign" aria-labelledby="campanhaTitulo">
@@ -142,8 +169,8 @@ require __DIR__ . '/views/partials/header.php';
     </figure>
     <div class="campaign__copy">
         <p class="eyebrow eyebrow--light"><?= e($special['name']) ?></p>
-        <h2 class="campaign__title" id="campanhaTitulo">Heritage, <em>58 anos</em></h2>
-        <p>Duas séries numeradas para marcar o aniversário da casa. Verde com ouro, azul-noite com ouro. Quando a última peça sair, a série se encerra.</p>
+        <h2 class="campaign__title" id="campanhaTitulo">Heritage, <em>série de fundação</em></h2>
+        <p>Duas séries numeradas para marcar a fundação da casa. Verde com ouro, azul-noite com ouro. Quando a última peça sair, a série se encerra.</p>
         <ul class="campaign__list">
             <?php foreach ($specialProducts as $sp): $st = stock_status((int) $sp['stock']); ?>
             <li>
@@ -163,20 +190,20 @@ require __DIR__ . '/views/partials/header.php';
 <!-- História -->
 <section class="section story" id="historia" aria-labelledby="historiaTitulo">
     <div class="story__lead">
-        <p class="eyebrow">Desde 1968</p>
-        <h2 class="section-title" id="historiaTitulo">Começou com <em>relógios dos outros</em></h2>
-        <p>Heitor Morvane abriu uma pequena oficina em São Paulo para consertar relógios de bolso da vizinhança. Muitos eram presentes de pais e avós. Ele aprendeu cedo que ninguém traz um relógio para o conserto por causa das horas.</p>
-        <p>Em 1974 montou a primeira peça com o próprio nome. Hoje a casa tem 22 relojoeiros e continua fazendo revisão em qualquer Morvane, de qualquer década.</p>
+        <p class="eyebrow">Fundada por André Aquino</p>
+        <h2 class="section-title" id="historiaTitulo">Relógios para <em>os momentos que ficam</em></h2>
+        <p>André Aquino fundou a AQUINO com uma ideia simples: ninguém guarda um relógio por causa das horas. Ele fica no pulso no dia do primeiro contrato, na partida de domingo, no brinde com os amigos.</p>
+        <p>Por isso a casa monta cada peça em pequenos lotes, com calibres próprios, e faz a revisão de qualquer AQUINO, de qualquer ano.</p>
     </div>
     <blockquote class="story__quote">
         <p>“Um relógio bom é aquele que alguém vai querer herdar.”</p>
-        <cite>Heitor Morvane, fundador</cite>
+        <cite>André Aquino, fundador e CEO</cite>
     </blockquote>
     <ol class="story__timeline">
-        <li><span class="story__year">1968</span><span>Oficina de conserto na Rua Augusta.</span></li>
-        <li><span class="story__year">1984</span><span>MV-07, o primeiro calibre de corda manual da casa.</span></li>
-        <li><span class="story__year">2009</span><span>MV-24, automático com 70 horas de reserva.</span></li>
-        <li><span class="story__year">2026</span><span>58 anos e as séries numeradas Heritage.</span></li>
+        <li><span class="story__year">2026</span><span>André Aquino funda a casa em São Paulo.</span></li>
+        <li><span class="story__year">AQ-07</span><span>O calibre de corda manual, com 50 horas de reserva.</span></li>
+        <li><span class="story__year">AQ-24</span><span>O automático de dois tambores, com 70 horas de reserva.</span></li>
+        <li><span class="story__year">230</span><span>Peças numeradas nas duas séries Heritage de fundação.</span></li>
     </ol>
 </section>
 
