@@ -7,6 +7,8 @@ E-commerce acadêmico de relógios premium, feito em **PHP 8 + PDO + MySQL/Maria
 - Sacola em `$_SESSION`, checkout com PIX/boleto/cartão simulados e pedido em transação
 - Painel `/admin` com CRUD de produtos, coleções, pedidos e clientes
 
+**Apresentação do projeto (PDF):** [`docs/AQUINO-apresentacao.pdf`](docs/AQUINO-apresentacao.pdf) — identidade visual, telas, requisitos atendidos e como abrir no XAMPP.
+
 ## Requisitos
 - XAMPP com PHP 8.0 ou mais novo (extensões `pdo_mysql`, `fileinfo`, `mbstring`, `bcmath` — todas vêm no XAMPP)
 - MySQL 8 ou MariaDB 10.4+
