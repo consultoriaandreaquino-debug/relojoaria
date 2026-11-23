@@ -13,6 +13,8 @@ E-commerce acadêmico de relógios premium, feito em **PHP 8 + PDO + MySQL/Maria
 - Apache com `mod_rewrite` e `AllowOverride All` (padrão do XAMPP)
 
 ## Instalação no XAMPP
+**Atualizar uma instalação que já existe:** com Apache e MySQL ligados no XAMPP, dê dois cliques em `tools\atualizar-xampp.bat`. Ele baixa a versão nova do GitHub, mantém o seu `.env` e reimporta o banco.
+
 1. Copie a pasta do projeto para `C:\xampp\htdocs\relojoaria`.
 2. Copie `.env.example` para `.env` e ajuste se precisar:
    ```
