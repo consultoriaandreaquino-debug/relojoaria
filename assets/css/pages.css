@@ -561,10 +561,10 @@
 .summary__items li > span { white-space: nowrap; }
 
 @media (max-width: 767.98px) {
-    .ensaio__hero { height: auto; min-height: 0; aspect-ratio: 4 / 5; }
-    .ensaio__hero img { object-position: 50% 50%; }
-    .ensaio__hero::after { height: 60%; }
-    .ensaio__intro { left: var(--gutter); right: var(--gutter); }
+    .ensaio__hero { height: auto; min-height: 0; }
+    .ensaio__hero img { height: auto; aspect-ratio: 4 / 5; object-position: 50% 50%; }
+    .ensaio__hero::after { display: none; }
+    .ensaio__intro { position: static; padding: 2rem var(--gutter) 2.5rem; max-width: none; }
     .ensaio__pair { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
